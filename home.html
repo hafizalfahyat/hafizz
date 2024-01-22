@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>HOME</title>
+        <script>
+            alert("Selamat datang di Tutorial Javascript");
+           
+                function img(){
+                    var img=document.createElement("img");
+                    img.src="gambar 1.jpg";
+                    img.alt="gambarku";
+                    img.style.width = "230px";
+                    document.body.appendChild(img);
+                }
+                var Tutorial = document.getElementById("Tutorial");
+                Tutorial.innerText="Ini Tutorial Javascript";
+                Tutorial.style.background="Tomato";
+                var Belajar = document.getElementsByClass("Belajar");
+                Belajar.innerText="Ini Belajar Javascript";
+                Belajar.style.background="Darkblue";
+                var RPL = document.getElementsByName("RPL");
+                RPL.style.background="Gold";
+        </script>
+        
+    </head>
+    <body>
+        <div id="Tutorial" class="Belajar" name="RPL">
+        <h1>PEMBERITAHUAN</h1>
+        <p>Jika kamu dapat melihat ini maka javascript berhasil</p>
+        <button onclick="img()">Pencet Disini Liat Gambar!</button>
+    </div>
+    </body>
+</html>
